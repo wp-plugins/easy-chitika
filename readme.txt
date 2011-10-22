@@ -4,7 +4,7 @@ Donate link: http://buy.ads-ez.com/easy-chitika
 Tags: chitika, ad, ads, advertising, income
 Requires at least: 3.2
 Tested up to: 3.2
-Stable tag: 1.21
+Stable tag: 1.22
 
 Easy Chitika showcases Chitika ads on your blog, with full customization.
 
@@ -33,15 +33,9 @@ I would like to hear from you if you have any feature requests or comments.
 1. Max Number of Ad blocks: Since some providers require you to limit the number of ad blocks to some policy-driven ceiling, I will expose that option to you. Also to be customized is the number of ads per slot. In this initial release, there are three slots (top, middle and bottom), each of which can take two ad blocks. In a future release, you will have much more customization options.
 1. Internationalization: Future versions will provide MO/PO files for internationalization.
 
-= New in 1.21 =
+= New in 1.22 =
 
-Simplifying `defaults.php`, coding improvements.
-
-== Upgrade Notice ==
-
-= 1.21 =
-
-Simplifying `defaults.php`, coding improvements.
+Changes to the informational messages on the admin interface.
 
 == Screenshots ==
 
@@ -87,6 +81,7 @@ Please report any problems, and share your thoughts and comments [at the plugin 
 
 == Change Log ==
 
+* V1.22: Changes to the informational messages on the admin interface. [Oct 23, 2011]
 * V1.21: Simplifying `defaults.php`, coding improvements. [Oct 22, 2011]
 * V1.20: Bug fixes, coding improvements. [Sep 9, 2011]
 * V1.00: Initial release. [Nov 15, 2010]

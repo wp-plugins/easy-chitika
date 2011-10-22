@@ -58,7 +58,7 @@ function renderProText($name, $plg, $isPro) {
 <big style="color:#a48;font-variant: small-caps;text-decoration:underline" onmouseover="TagToTip(\'pro\', WIDTH, 230, TITLE, \'Buy the Pro Version\',STICKY, 1, CLOSEBTN, true, CLICKCLOSE, true, FIX, [this, 5, 5])"><b>The Pro Version</b></big>
 </center>' ;
 
-  echo "You are using the \"Lite\" version of $value. The \"Pro\" version gives you more options. Consider <a href='http://buy.ads-ez.com/$name' title='Pro version of this plugin. Instant download link.'>buying it</a>. It costs only \$$price." ;
+  echo "Thank you for using $value. The \"Pro\" version gives you more options. Consider <a href='http://buy.ads-ez.com/$name' title='Pro version of this plugin. Instant download link.'>buying it</a>. It costs only \$$price." ;
 
   echo "<div id='pro'>" ;
   renderHeadText($name, $plg, $isPro) ;

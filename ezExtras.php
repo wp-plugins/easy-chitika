@@ -65,7 +65,7 @@ if (!class_exists("ezExtras")) {
       return ;
     }
     public static function validSize($size) {
-      $sizes = ezNS::$defaults['ads']['sizes']['chitika'] ;
+      $sizes = ezNS::$defaults['ads']['sizes'] ;
       if (in_array($size, $sizes)) return $size ;
       else return "300x250" ;
     }
@@ -92,7 +92,7 @@ if (!class_exists("ezExtras")) {
           $w = substr($key, 0, $x)-20;
           $h = substr($key, $x+1)-20;
           $p = (int)(min($w,$h)/6) ;
-          $ret = '<div style="width:'.$w.'px;height:'.$h.'px;border:1px solid red;margin:10px;"><div style="padding:'.$p.'px;text-align:center;font-family:arial;font-size:8pt;"><p>Your ads will be inserted here by</p><p><b><a href="http://buy.ads-ez.com/easy-ads" title="The next generation advertizing plugin for WordPress" target="_blank">Easy Ads Pro</a></b>.</p><p>Please go to the plugin admin page to paste your ad code.</p></div></div>' ;
+          $ret = '<div style="width:'.$w.'px;height:'.$h.'px;border:1px solid red;margin:10px;"><div style="padding:'.$p.'px;text-align:center;font-family:arial;font-size:8pt;"><p>Your ads will be inserted here by</p><p><b><a href="http://buy.ads-ez.com/'.ezNS::$baseName.'" title="The next generation advertizing plugin for WordPress" target="_blank">'.ezNS::$name.ezNS::$strPro.'</a></b>.</p><p>Please go to the plugin admin page to paste your ad code.</p></div></div>' ;
         }
         else {
           $ret = self::getMcAd($key) ;

@@ -4,7 +4,7 @@ Donate link: http://buy.ads-ez.com/easy-chitika
 Tags: chitika, ad, ads, advertising, income
 Requires at least: 3.2
 Tested up to: 3.2
-Stable tag: 1.20
+Stable tag: 1.21
 
 Easy Chitika showcases Chitika ads on your blog, with full customization.
 
@@ -12,7 +12,9 @@ Easy Chitika showcases Chitika ads on your blog, with full customization.
 
 *Easy Chitika* provides a streamlined interface to deploy Chitika ads on your blog. You can customize the colors and sizes of the ad blocks and activate them right from the plugin interface. If you don't have an Chitika account, [sign up here](http://chitika.com/publishers.php?refid=manojt "Create your Chitika account").
 
-*Easy Chitika* is a specialized version of [Easy Ads](http://www.thulasidas.com/plugins/easy-ads/ "Manage multiple ad providers on your blog"), which lets you manage multiple ad providers in a neat, tabbed interface. It may be more appropriate than *Easy Chitika* if you plan to use more than one ad provider.
+*Easy Chitika* is part of the *easy series* of advertising plugins comprising of Easy Google, Easy BidVertiser, Easy Clicksor and Easy Chitika. If you plan to use more than one ad provider, you will find it more convenient to install [Easy Ads](http://buy.ads-ez.com/easy-ads/ "Manage multiple ad providers on your blog"), a premium plugin that combines all of them in a neatly tabbed, streamlined interface.
+
+Note that the *easy series* of advertising plugins require PHPv5.3+. If they don't work on your blog host, please consider the amazing [Easy AdSense Pro](http://buy.ads-ez.com/easy-adsense/ "The most popular plugin to insert AdSense on your blog") for all your advertising needs. It can insert non-AdSense blocks as well.
 
 = Features =
 1. Tabbed and intuitive interface.
@@ -22,9 +24,7 @@ Easy Chitika showcases Chitika ads on your blog, with full customization.
 5. Control over the positioning and display of ad blocks in each post or page.
 6. Customized Chitika interface with color pickers.
 
-If you like *Easy Chitika*, you may want to check out my other plugins: [Theme Tweaker](http://www.thulasidas.com/plugins/theme-tweaker/ "To tweak the colors in your theme with no CSS/PHP editing") and [Easy LaTeX](http://www.thulasidas.com/plugins/easy-latex/ "To display mathematical equations in your blog using LaTeX"). And my plugin for plugin authors: [Easy Translator](http://www.thulasidas.com/plugins/easy-translator/  "To translate any plugin (with internationalized strings) to your language.").
-
-Note that when you activate the plugin and leave the user ID for your ad codes empty, the plugin will show random ads of mine (mainly referral requests, publicity for my books). To suppress these, please [sign up](http://chitika.com/publishers.php?refid=manojt "Create your Chitika account") for a Chitika account and enter your user ID.
+If you like *Easy Chitika*, you may want to check out my other plugins: [Theme Tweaker](http://buy.ads-ez.com/theme-tweaker/ "To tweak the colors in your theme with no CSS/PHP editing") and [Easy LaTeX](http://buy.ads-ez.com/easy-latex/ "To display mathematical equations in your blog using LaTeX"). And my plugin for plugin authors: [Easy Translator](http://buy.ads-ez.com/easy-translator/  "To translate any plugin (with internationalized strings) to your language.").
 
 = Future Plans =
 
@@ -33,20 +33,20 @@ I would like to hear from you if you have any feature requests or comments.
 1. Max Number of Ad blocks: Since some providers require you to limit the number of ad blocks to some policy-driven ceiling, I will expose that option to you. Also to be customized is the number of ads per slot. In this initial release, there are three slots (top, middle and bottom), each of which can take two ad blocks. In a future release, you will have much more customization options.
 1. Internationalization: Future versions will provide MO/PO files for internationalization.
 
-= New in 1.20 =
+= New in 1.21 =
 
-Bug fixes, coding improvements.
+Simplifying `defaults.php`, coding improvements.
 
 == Upgrade Notice ==
 
-= 1.20 =
+= 1.21 =
 
-Bug fixes, coding improvements.
+Simplifying `defaults.php`, coding improvements.
 
 == Screenshots ==
 
 1. *Easy Chitika* "Overview" tab.
-2. How to set the options for one provider in *Easy Chitika*.
+2. How to set the options for Chitika.
 
 == Installation ==
 
@@ -62,8 +62,9 @@ Please copy *all* the files in the zip archive to your plugin directory. You nee
 
 = I activate the plugin, but nothing happens. I see some red error message stating something about PHP version. What gives? =
 
-This plugin requires PHP version 5.2 or later (same as WP3.2+). If it doesn't find the right version, it posts an error message in the plugins page, and does nothing. You will need to contact the system admin or support folks of your hosting service and request them to install PHP5.x for you. Usually, all it takes is just an email to get it sorted out.
+This plugin requires PHP version 5.3 or later. If it doesn't find the right version, it posts an error message in the plugins page, and does nothing. You will need to contact the system admin or support folks of your hosting service and request them to install PHP5.x for you. Usually, all it takes is just an email to get it sorted out.
 
+Note that this plugin requires PHPv5.3+. If it does not work on your web host, please consider the amazing [Easy AdSense Pro](http://buy.ads-ez.com/easy-adsense/ "The most popular plugin to insert AdSense on your blog") for all your advertising needs. It can insert non-AdSense blocks as well.
 
 = How can I control the appearance of the ad blocks using CSS? =
 
@@ -86,5 +87,6 @@ Please report any problems, and share your thoughts and comments [at the plugin 
 
 == Change Log ==
 
+* V1.21: Simplifying `defaults.php`, coding improvements. [Oct 22, 2011]
 * V1.20: Bug fixes, coding improvements. [Sep 9, 2011]
 * V1.00: Initial release. [Nov 15, 2010]

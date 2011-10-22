@@ -19,7 +19,7 @@
 $ezErrorMsg = "" ;
 $phpVersion = (float) phpversion() ;
 $scriptName = strtolower(basename(dirname($_SERVER['SCRIPT_FILENAME'])));
-if ($phpVersion < 5.2) {
+if ($phpVersion < 5.3) {
   $ezErrorMsg = "<b><em>$scriptName</em></b>: " .
                 "Your PHP version (" . $phpVersion . ") is too old. This plugin " .
                 "needs version 5.3+. Please get your contact your web-hosting " .

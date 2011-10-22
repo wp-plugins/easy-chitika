@@ -427,6 +427,10 @@ if (!class_exists("provider")) {
           if ($metaStyle == 'center')
             // $style = 'margin-left:atuo;margin-right:auto;' ;
             $style = 'text-align:center;display:block;' ;
+          if ($metaStyle == 'no'){
+            $emptyText = "\n<!-- Easy Ads: Suppressed $key by custom tag: $metaKey -->\n" ;
+            $this->adBlocks[$key]->set($emptyText) ;
+          }
           if (!empty($style)) {
             $properties = array() ;
             $properties['style'] = $style ;

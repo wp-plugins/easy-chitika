@@ -2,6 +2,8 @@
 
 $myPlugins = array() ;
 
+$needPHP53 = ' <p> <font color="#c00">Note that this plugin requires PHPv5.3+. Please use the Lite version first to ensure that it works before buying the Pro version. If it does not work on your web host, consider the amazing <a href="http://buy.ads-ez.com/easy-adsense/" title=The most popular plugin to insert AdSense on your blog"><em><strong>Easy AdSense Pro</strong></em></a> for all your advertising needs. It can insert non-AdSense blocks as well.</font></p>' ;
+
 $myPlugins['easy-adsense'] =
   array('value' => 'Easy AdSense',
     'support' => 'HYZ5AWPYSC8VA',
@@ -19,7 +21,8 @@ $myPlugins['adsense-now'] =
     'price' => '3.95',
     'share' => true,
     'long' => true,
-    'blurb' => '<em><strong>AdSense Now!</strong></em> is an updated version of another popular (downloaded about 150,000 times) WordPress plugin. This premium plugin ',    'desc' => 'gets you started with Google AdSense. No mess, no fuss.',
+    'blurb' => '<em><strong>AdSense Now!</strong></em> is an updated version of another popular (downloaded about 150,000 times) WordPress plugin. This premium plugin ',
+    'desc' => 'gets you started with Google AdSense. No mess, no fuss.',
     'title' => '<em><strong>AdSense Now!</strong></em> is the simplest possible way to generate revenue from your blog using Google AdSense. Aiming at simplicity, <em><strong>AdSense Now!</strong></em> does only one thing: it puts your AdSense code in up to three spots in your posts and pages (both existing ones and those yet to be written).',
     'pro' => 'The Lite version of <em><strong>AdSense Now!</strong></em> is fully functional. However, it has an ad slot sharing mechanism built in whereby you can donate about 5% of your ad spaces to the author of the plugin. It may also put a small powered-by kind of link below the first ad block on your pages. The Pro version has these options turned off and gives you options on the admin page to control them.') ;
 
@@ -30,9 +33,9 @@ $myPlugins['easy-ads'] =
     'share' => true,
     'long' => false,
     'blurb' => '<em><strong>Easy Ads</strong></em> is a multi-provider advertising plugin. This streamlined plugin ',
-    'desc' => 'showcases AdSense and its alternatives on your blog: Chitika, BidVertiser, Clicksor etc.',
-    'title' => '<em><strong>Easy Ads</strong></em> provides a unified and intuitive interface to manage multiple ad providers on your blog. Currently supported are Chitika, BidVertiser, Clicksor, and, of course, AdSense. The list of ad providers will be expanded later on at your request. AdSense dumped you? Do not be heartbroken; there are other fish in the sea. You may find happiness with <a href="http://www.clicksor.com/pub/index.php?ref=105268" title="Careful, do not double-date with AdSense and Clicksor, they get very jealous of each other!">Clicksor</a>, <a href="http://www.bidvertiser.com/bdv/bidvertiser/bdv_ref_publisher.dbm?Ref_Option=pub&amp;Ref_PID=229404" title="Another fine ad provider">BidVertiser</a> or <a href="http://chitika.com/publishers.php?refid=manojt" title="Compatible with AdSense">Chitika</a>. Use <a href="http://buy.ads-ez.com/plugins/easy-ads/" title="A new plugin to handle AdSense and its alternatives"><em><strong>Easy Ads</strong></em></a>, and you may get lucky!',
-    'pro' => 'The Lite version of <em><strong>Easy Ads</strong></em> is fully functional. It has an ad slot sharing mechanism built in whereby you can donate about 5% of your ad spaces to the author of the plugin. It may also put a small powered-by kind of link below the first ad block on your pages. The Pro version gives you options on the admin page to turn off these two features, as well as other global options like activating and deactivating various ad providers, resetting all options etc. Note that this plugin needs PHPv5.2+. Please use the Lite version first to ensure that it works before buying the Pro version.') ;
+    'desc' => 'showcases AdSense and its alternatives on your blog',
+    'title' => '<em><strong>Easy Ads</strong></em> provides a unified and intuitive interface to manage multiple ad providers on your blog. It lets you insert ads provided by <a href="http://www.clicksor.com/pub/index.php?ref=105268" title="Careful, do not double-date with AdSense and Clicksor, they get very jealous of each other!">Clicksor</a>, <a href="http://www.bidvertiser.com/bdv/bidvertiser/bdv_ref_publisher.dbm?Ref_Option=pub&amp;Ref_PID=229404" title="Another fine ad provider">BidVertiser</a> or <a href="http://chitika.com/publishers.php?refid=manojt" title="Compatible with AdSense">Chitika</a> into your existing and future blog posts and pages.',
+    'pro' => 'The Lite version of <em><strong>Easy Ads</strong></em> is fully functional. It has an ad slot sharing mechanism built in whereby you can donate about 5% of your ad spaces to the author of the plugin. It may also put a small powered-by kind of link below the first ad block on your pages. The Pro version gives you options on the admin page to turn off these two features, as well as other global options like activating and deactivating various ad providers, resetting all options etc.' . $needPHP53) ;
 
 $myPlugins['easy-chitika'] =
   array('value' => 'Easy Chitika',
@@ -42,8 +45,30 @@ $myPlugins['easy-chitika'] =
     'long' => false,
     'blurb' => '<em><strong>Easy Chitika</strong></em> is an specialized, single-provider version of <em><strong>Easy Ads</strong></em>. If you are planning to use more than two providers, it may be easier and more economical to use <em><strong>Easy Ads</strong></em>. <em><strong>Easy Chitika</strong></em> ',
     'desc' => 'provides you with a fully streamlined interface to manage Chitika advertising on your blog.',
-    'title' => 'AdSense dumped you? Do not be heartbroken; there are other fish in the sea. You may find happiness with <a href="http://chitika.com/publishers.php?refid=manojt" title="Compatible with AdSense">Chitika</a>. Use <a href="http://buy.ads-ez.com/plugins/easy-chitika/" title="A new plugin to handle Chitika"><em><strong>Easy Chitika</strong></em></a>, and you may get lucky! <em><strong>Easy Chitika</strong></em> provides a specialized and intuitive interface to manage Chitika ads on your blog, with size selectors, widget options, color-picker to customize your colors, etc.',
-    'pro' => 'The Lite version of <em><strong>Easy Chitika</strong></em> is fully functional. It has an ad slot sharing mechanism built in whereby you can donate about 5% of your ad spaces to the author of the plugin. It may also put a small powered-by kind of link below the first ad block on your pages. The Pro version gives you options on the admin page to turn off these two features, as well as other global options like setting the number of ads on your page, resetting all options etc. Note that this plugin needs PHPv5.2+. Please use the Lite version first to ensure that it works before buying the Pro version.') ;
+    'title' => '<a href="http://chitika.com/publishers.php?refid=manojt" title="Compatible with AdSense">Chitika</a> is a good option if you want to supplement your AdSense income. <a href="http://buy.ads-ez.com/plugins/easy-chitika/" title="A new plugin to handle Chitika"><em><strong>Easy Chitika</strong></em></a> provides you with a specialized and intuitive interface to manage all aspects of Chitika ads on your blog, with size selectors, widget options, color-picker to customize your colors, etc.',
+    'pro' => 'The Lite version of <em><strong>Easy Chitika</strong></em> is fully functional. It has an ad slot sharing mechanism built in whereby you can donate about 5% of your ad spaces to the author of the plugin. It may also put a small powered-by kind of link below the first ad block on your pages. The Pro version gives you options on the admin page to turn off these two features, as well as other global options like setting the number of ads on your page, resetting all options etc.' . $needPHP53) ;
+
+$myPlugins['easy-bidvertiser'] =
+  array('value' => 'Easy BidVertiser',
+    'support' => '4W6E6JVP5RYQU',
+    'price' => '4.95',
+    'share' => true,
+    'long' => false,
+    'blurb' => '<em><strong>Easy BidVertiser</strong></em> is an specialized, single-provider version of <em><strong>Easy Ads</strong></em>. If you are planning to use more than two providers, it may be easier and more economical to use <em><strong>Easy Ads</strong></em>. <em><strong>Easy BidVertiser</strong></em> ',
+    'desc' => 'provides you with a fully streamlined interface to manage BidVertiser advertising on your blog.',
+    'title' => '<a href="http://www.bidvertiser.com/bdv/bidvertiser/bdv_ref_publisher.dbm?Ref_Option=pub&amp;Ref_PID=229404" title="Another fine ad provider">BidVertiser</a> is another fine ad provider. <a href="http://buy.ads-ez.com/plugins/easy-bidvertiser/" title="A new plugin to handle BidVertiser"><em><strong>Easy BidVertiser</strong></em></a> gives you a good interface to manage BidVertiser ads on your blog, with sidebar widget options.',
+    'pro' => 'The Lite version of <em><strong>Easy BidVertiser</strong></em> is fully functional. It has an ad slot sharing mechanism built in whereby you can donate about 5% of your ad spaces to the author of the plugin. It may also put a small powered-by kind of link below the first ad block on your pages. The Pro version gives you options on the admin page to turn off these two features, as well as other global options like setting the number of ads on your page, resetting all options etc.' . $needPHP53) ;
+
+$myPlugins['easy-google'] =
+  array('value' => 'Easy Google',
+    'support' => '6M4A94KQMA9UL',
+    'price' => '4.95',
+    'share' => true,
+    'long' => false,
+    'blurb' => '<em><strong>Easy Google</strong></em> is a single-provider version of <em><strong>Easy Ads</strong></em> specialized for Google AdSense serving. If you are planning to use more than two providers, it may be easier and more economical to use <em><strong>Easy Ads</strong></em>. <em><strong>Easy Google</strong></em> ',
+    'desc' => 'provides you with a fully streamlined interface to manage Google AdSense advertising on your blog.',
+    'title' => '<a href="http://buy.ads-ez.com/plugins/easy-google/" title="A new plugin to handle Google"><em><strong>Easy Google</strong></em></a> gives you a specialized and intuitive interface to manage AdSense ads on your blog, with size selectors, widget options, color-picker to customize your colors, etc. It is a new generation plugin with a fancy, tabbed interface.',
+    'pro' => 'The Lite version of <em><strong>Easy Google</strong></em> is fully functional. It has an ad slot sharing mechanism built in whereby you can donate about 5% of your ad spaces to the author of the plugin. It may also put a small powered-by kind of link below the first ad block on your pages. The Pro version gives you options on the admin page to turn off these two features, as well as other global options like setting the number of ads on your page, resetting all options etc.' . $needPHP53) ;
 
 $myPlugins['theme-tweaker'] =
   array('value' => 'Theme Tweaker',

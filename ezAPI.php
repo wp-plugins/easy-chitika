@@ -210,8 +210,10 @@ if (!class_exists("ezOption")) {
     }
     function render() {
       if (!empty($this->before)) echo $this->before, "\n" ;
-      if (empty($this->url)) $this->url = 'http://www.thulasidas.com/plugins/' . $this->name ;
-      $link = '<b><a href="' . $this->url . '" target="_blank">' . $this->value . '</a> </b>' ;
+      $name = $this->name ;
+      $value = $this->value ;
+      if (empty($this->url)) $this->url = 'http://buy.ads-ez.com/' . $name ;
+      $link = '<b><a href="' . $this->url . '" target="_blank">' . $value . '</a> </b>' ;
       $text = $link . $this->desc ;
       $price = $this->price ;
       $moreInfo =  "&nbsp; <a href='http://www.thulasidas.com/plugins/$name' title='More info about $value'>More Info</a>" .
@@ -856,9 +858,7 @@ if (!class_exists("ezPlugin")) {
       $this->name = ezNS::$name ;
       $this->genOptionName = ezNS::$genOptionName ;
       if (file_exists ($this->CWD . '/defaults.php')) {
-        include ($this->CWD.'/defaults.php');
-        $defaults =
-          unserialize(gzinflate(base64_decode(str_replace( "\r\n", "", $str)))) ;
+        include ($this->CWD . '/defaults.php');
       }
       if (empty($defaults)) {
         $this->errorMessage = '<div class="error"><p><b><em>ezAPI</em></b>: '.
